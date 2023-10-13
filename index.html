@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorcut-18</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-5xl my-6 ">My <span class="text-red-500 font-semibold">Bank</span>!!!</h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white"> 
+
+            <div class="bg-yellow-400 p-8 rounded-lg">
+                <h4 class="text-3xl">Deposite</h4>
+                <h2 class="text-5xl font-medium">$ <span id="deposite-total">00</span></h2>
+            </div>
+
+            <div class="bg-red-400 p-8 rounded-lg">
+                <h4 class="text-3xl">Withdraw</h4>
+                <h2 class="text-5xl font-medium">$ <span id="withdraw-total">00</span></h2>
+            </div>
+
+            <div class="bg-blue-400 p-8 rounded-lg">
+                <h4 class="text-3xl">Balance</h4>
+                <h2 class="text-5xl font-medium">$ <span id="balance-total">00</span></h2>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-8">
+
+            <div class="bg-blue-400 p-8 rounded-lg">
+                <h3 class="text-4xl text-white mb-4">Your Deposite</h3>
+                <input id="deposite-field" class="w-3/4 px-4 py-3 rounded block" type="text" placeholder="Enter Amount">
+                <button id="btn-deposite" class="bg-blue-800 px-6 py-2 text-white rounded-lg mt-4 font-medium hover:bg-blue-600">Deposite</button>
+            </div>
+
+            <div class="bg-amber-400 p-8 rounded-lg">
+                <h3 class="text-4xl text-white mb-4">Your Withdraw</h3>
+                <input id="withdraw-field" class="w-3/4 px-4 py-3 rounded block" type="text" placeholder="Enter Amount">
+                <button id="btn-withdraw" class="bg-blue-800 px-6 py-2 text-white rounded-lg mt-4 font-medium hover:bg-blue-600">Withdraw</button>
+            </div>
+
+        </section>
+    </main>
+    
+    <script src="bank.js"></script>
+
+</body>
+</html>
