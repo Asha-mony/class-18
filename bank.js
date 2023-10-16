@@ -46,6 +46,25 @@ function getInnerText(textFieldID) {
     const withdrawFieldValue = getInputValue('withdraw-field');
     // console.log(withdrawFieldValue);
 
+
+     // get innertext value
+     const getInnerTextValue = getInnerText('withdraw-total')
+
+     // add input value and innertext
+     const totalValue = withdrawFieldValue + getInnerTextValue;
+ 
+     // get the text field
+     const innerTextField = document.getElementById('withdraw-total')
+ 
+     // set the value
+     innerTextField.innerText = totalValue;
+
+     const balanceValue = getInnerText('balance-total')
+     const totalBalance = balanceValue - withdrawFieldValue;
+ 
+     const balanceField = document.getElementById('balance-total')
+     balanceField.innerText = totalBalance;
+     
 })
 
 
